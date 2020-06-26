@@ -5,10 +5,12 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        transition: color .3s;
     }
 
-    html, body, #root {
-        height: 100%;
+    #root {
+        display: flex;
+        flex-direction: column;
     }
 
     *, button, input {

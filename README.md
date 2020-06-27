@@ -22,12 +22,12 @@ Para criar um build de produção, execute:
 Os arquivos de produção serão gerados na pasta `build`.<br />
 O build é minificado.
 
-## Deploy
+### `Deploy`
 
 Um deploy desta aplicação está disponível no Netlify:
 
 [https://blissful-mcnulty-227531.netlify.app/](https://blissful-mcnulty-227531.netlify.app/)
 
-##Contato
+### Contato
 
 E-mail: cleistonrs@gmail.com

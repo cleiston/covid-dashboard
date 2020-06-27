@@ -1,3 +1,10 @@
+/*
+ * COVID DASHBOARD
+ *
+ * Author: Cleiston Rodrigues
+ * Email: cleistonrs@gmail.com
+*/
+
 import React from 'react';
 
 import Header from './components/Header';

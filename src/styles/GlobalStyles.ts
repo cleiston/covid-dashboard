@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+// Global CSS styles
+
 export default createGlobalStyle`
     * {
         margin: 0;
@@ -34,5 +36,10 @@ export default createGlobalStyle`
         --light-pink: #EC9AAE;
 
         --link: #5d80d6;   
+    }
+
+    ::selection {
+        color: var(--footer);
+        background: var(--light-purple);
     }
 `;

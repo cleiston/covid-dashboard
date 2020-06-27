@@ -1,12 +1,14 @@
-import React, {useState, useEffect} from 'react';
-import {HorizontalBar} from 'react-chartjs-2';
+import React, { useState, useEffect } from 'react';
+import { HorizontalBar } from 'react-chartjs-2'; // JS library to display data through charts
 import { Container, Header, Body, Footer } from './styles';
 
+// Define the data fields allowed to be used here 
 interface Country{
   Country: string;
   TotalConfirmed: number;
 }
 
+// Define the fields that this Component will receive from its parent
 interface Props {
     color: string;
     date: string;
@@ -20,13 +22,14 @@ const Chart: React.FC<Props> = ({color, date, countries}) => {
     useEffect(() => {
       const countryNames = countries.map(country => country.Country);
       const countryNumbers = countries.map(country => 
-                                country.TotalConfirmed/1000000); // return numbers in milions
+                                country.TotalConfirmed/1000000); // return numbers in milions (M)
+                                                                 // more compact representation
 
       const data = {
         labels: countryNames,
         datasets: [
           {
-            label: 'Casos de COVID-19 em milhões',
+            label: 'Casos de COVID-19 em milhões (M)',
             backgroundColor: 'rgba(255,99,132,0.2)',
             borderColor: 'rgba(255,99,132,1)',
             borderWidth: 1,
@@ -39,7 +42,7 @@ const Chart: React.FC<Props> = ({color, date, countries}) => {
 
       setTopCountries(data);
 
-    }, [countries]);
+    }, [countries]); // this function executes everytime the countries variable changes (data from API)
 
     return (
       <Container color={color}>

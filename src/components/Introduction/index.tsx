@@ -1,6 +1,11 @@
 import React from 'react';
 
+// html elements styled with styled components
 import { Container, Window, Message, Title, Text } from './styles';
+
+// contains an Image background on the Container component
+// the window component darkens up the image, for better reading the text
+// Message component is floated to left for bigger screens, and fills the whole screen on smaller screens
 
 const Introduction: React.FC = () => {
     return (

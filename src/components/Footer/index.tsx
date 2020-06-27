@@ -1,11 +1,23 @@
 import React from 'react';
-import { FiMail, FiLinkedin, FiFacebook, FiInstagram, FiPhone, FiExternalLink, FiTrendingUp as Up } from 'react-icons/fi';
+import { 
+
+    FiMail, 
+    FiLinkedin, 
+    FiFacebook, 
+    FiInstagram, 
+    FiPhone, 
+    FiExternalLink, 
+    FiTrendingUp as Up 
+
+} from 'react-icons/fi';
 
 import { Container, Item, Title, AdditionalInfo, Contact } from './styles';
 
+// Footer of the webpage
+
 const Footer: React.FC = () => {
     return (
-            <Container>
+            <Container id="about">
                 <Item>
                     <Title><Up /> covid dashboard</Title>
                 </Item>

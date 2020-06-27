@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiMail, FiLinkedin, FiFacebook, FiPhone, FiExternalLink } from 'react-icons/fi';
+import { FiMail, FiLinkedin, FiFacebook, FiInstagram, FiPhone, FiExternalLink, FiTrendingUp as Up } from 'react-icons/fi';
 
 import { Container, Item, Title, AdditionalInfo, Contact } from './styles';
 
@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     return (
             <Container>
                 <Item>
-                    <Title>covid dashboard</Title>
+                    <Title><Up /> covid dashboard</Title>
                 </Item>
                 <Item>
                     <AdditionalInfo>
@@ -37,6 +37,9 @@ const Footer: React.FC = () => {
                             </li>
                             <li>
                                 <a href="https://www.facebook.com/cleistonrs/"> <FiFacebook /> </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cleistonrs/"> <FiInstagram /> </a>
                             </li>
                             <li>
                                 <a href="tel:+5532991168369"> <FiPhone /> </a>

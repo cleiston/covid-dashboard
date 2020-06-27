@@ -19,13 +19,14 @@ const Chart: React.FC<Props> = ({color, date, countries}) => {
 
     useEffect(() => {
       const countryNames = countries.map(country => country.Country);
-      const countryNumbers = countries.map(country => country.TotalConfirmed);
+      const countryNumbers = countries.map(country => 
+                                country.TotalConfirmed/1000000); // return numbers in milions
 
       const data = {
         labels: countryNames,
         datasets: [
           {
-            label: 'Casos de covid',
+            label: 'Casos de COVID-19 em milhões',
             backgroundColor: 'rgba(255,99,132,0.2)',
             borderColor: 'rgba(255,99,132,1)',
             borderWidth: 1,
@@ -42,7 +43,7 @@ const Chart: React.FC<Props> = ({color, date, countries}) => {
 
     return (
       <Container color={color}>
-        <Header color={color}>Ranking dos paíse com maior número de casos</Header>
+        <Header color={color}>Ranking dos países com maior número de casos</Header>
         <Body>
             <HorizontalBar data={topCountries} />
         </Body>

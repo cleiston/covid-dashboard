@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FiHome as Home, FiInfo as About, FiTrendingUp as Up } from 'react-icons/fi';
 import { Container, Title, Menu, MenuItem, MenuIcon, XIcon } from './styles';
 
 const Header: React.FC = () => {
@@ -7,10 +8,10 @@ const Header: React.FC = () => {
 
     return (
         <Container mobileMenu={displayMenu}>
-            <Title>covid dashboard</Title>
+            <Title><Up /> covid dashboard</Title>
             <Menu>
-                <MenuItem href="/home">Home</MenuItem>
-                <MenuItem href="/about">About</MenuItem>                
+                <MenuItem href="/home"><Home /> Home </MenuItem>
+                <MenuItem href="/about"><About /> About</MenuItem>                
             </Menu>
             { displayMenu ? 
                 <XIcon onClick={() => setDisplayMenu(!displayMenu)} /> :

@@ -1,11 +1,23 @@
 import React from 'react';
+
+import Header from './components/Header';
+import Introduction from './components/Introduction';
+import ShowData from './components/ShowData';
+import Footer from './components/Footer';
 import GlobalStyles from './styles/GlobalStyles';
-import Layout from './components/Layout';
+
 
 function App() {
   return (
     <>
-      <Layout />
+      <Header />
+
+      <Introduction />
+
+      <ShowData />
+
+      <Footer />
+
       <GlobalStyles />
     </>
   );

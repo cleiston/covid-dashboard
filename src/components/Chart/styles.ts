@@ -14,7 +14,11 @@ export const Container = styled.div`
     transition: box-shadow .3s;
     animation-name: rotateChart;
     animation-duration: .5s;
-    
+
+    @media(max-width: 600px) {
+        width: 90%;
+        height: 100%;
+    }
 
     @keyframes rotateChart {
         from {

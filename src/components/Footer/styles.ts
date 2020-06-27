@@ -19,6 +19,10 @@ export const Item = styled.div`
     justify-content: center;
     padding: 20px;
     flex-wrap: wrap;
+
+    @media(max-width: 600px) {
+        width: 100%;       
+    }
 `;
 
 export const Title = styled.h1`

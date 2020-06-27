@@ -43,5 +43,5 @@ export const Title = styled.h1`
 export const Text = styled.p`
     color: var(--white);
     font-size: 13px;
-    padding: 10px;
+    padding-top: 10px;
 `;

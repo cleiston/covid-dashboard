@@ -80,14 +80,16 @@ export const Menu = styled.div`
 `;
 
 export const MenuItem = styled.a`
-    padding: 0 10px;
+    padding: 5px 10px;
     text-transform: uppercase;
     color: var(--white);
     font-weight: bold;
     text-decoration: none;
     margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color .3s;
     
     &:hover {
-        color: var(--link);
+        background-color: rgba(0, 0, 0, .2);
     }
 `;

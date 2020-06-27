@@ -5,19 +5,22 @@ import { Container, Header, Body, Content, Footer } from './styles';
 
 interface Props {
     color: string;
+    place: string;
+    cases: number;
+    date: string;
 }
 
-const Card: React.FC<Props> = ({color}) => {
+const Card: React.FC<Props> = ({color, cases, place, date}) => {
     return (
         <Container color={color}>
             <Header color={color}>
-                <h2>Casos confirmados no Brasil</h2>
+                <h2>Casos confirmados no {place}</h2>
             </Header>
             <Body>
                 <Content>
                     <CountUp
                         start={0}
-                        end={1234567}
+                        end={cases ? cases : 0}
                         duration={2}
                         separator=" "
                     />                  
@@ -25,7 +28,7 @@ const Card: React.FC<Props> = ({color}) => {
             </Body>
             <Footer>
                 <h3>Última atualização:</h3>
-                <span>2/03/2020</span>
+                <span>{(new Date(date)).toLocaleDateString('pt-BR')}</span>
             </Footer>
         </Container>
     );

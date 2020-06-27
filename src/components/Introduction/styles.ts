@@ -6,7 +6,7 @@ export const Container = styled.div`
     height: 350px;
     background-image: url(${coverPhoto});
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: cover;
 `;
 
 export const Window = styled.div`

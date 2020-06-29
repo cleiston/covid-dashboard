@@ -10,6 +10,10 @@ export default createGlobalStyle`
         transition: color .3s;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     #root {
         display: flex;
         flex-direction: column;

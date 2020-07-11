@@ -1,4 +1,5 @@
 Este projeto foi projetado com [Create React App](https://github.com/facebook/create-react-app).
+Exibe o número de infectados no Brasil e no mundo, além do ranking com os 5 países com maior número de casos.
 
 ## Scripts disponíveis
 
